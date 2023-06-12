@@ -1,0 +1,90 @@
+.enable-print-simple-style {
+  ::v-deep .ant-col {
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    .ant-col {
+      border: none;
+    }
+  }
+
+  ::v-deep .ant-row .ant-row .ant-col:last-child {
+    border-right: none;
+  }
+  ::v-deep .ant-form > div:first-child {
+    border-top: 1px solid !important;
+    // box-shadow: 0 -1px 0 0 black;
+  }
+  ::v-deep .ant-form > table:first-child .ant-col {
+    border-top: 1px solid !important;
+    // box-shadow: 0 -1px 0 0 black;
+  }
+  ::v-deep td:not(:nth-child(1)) .ant-col {
+    border-left: none !important;
+  }
+  ::v-deep .ant-row .ant-col:nth-child(1) {
+    border-left: 1px solid;
+  }
+  ::v-deep .ant-row .ant-row .ant-col {
+    border: none;
+    border-right: 1px solid;
+    .ant-col {
+      // border: none;
+    }
+  }
+  ::v-deep .ant-select-selection {
+    border: none;
+    box-shadow: none;
+  }
+
+  ::v-deep .ant-time-picker-input {
+    border: none;
+    &:hover,
+    &:focus,
+    &:active {
+      border: none;
+      box-shadow: none;
+    }
+  }
+  ::v-deep .ant-input {
+    border: none;
+    &:hover,
+    &:focus,
+    &:active {
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  ::v-deep .ant-input-number-focused {
+    box-shadow: none;
+  }
+
+  ::v-deep .ant-input-focused {
+    box-shadow: none;
+  }
+
+  ::v-deep .ant-input-number {
+    border: none;
+    &:hover,
+    &:focus,
+    &:active {
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  ::v-deep .ant-form-item-label {
+    padding: 2px 4px;
+    text-align: end;
+  }
+
+  ::v-deep .table-td {
+    padding: 0 !important;
+  }
+  ::v-deep .kk-table-9136076486841527.bordered tr td {
+    border: none !important;
+  }
+  ::v-deep .ant-form-item {
+    margin: 0 !important;
+  }
+}

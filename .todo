@@ -1,0 +1,42 @@
+{
+  "todotree": {
+    "tree": [
+      {
+        "key": 1681787157361,
+        "children": [],
+        "todo": {
+          "content": "用  antdv 重写 bpmn界面",
+          "id": 1681787157361,
+          "level": "default",
+          "done": false,
+          "start": 1681787157361
+        }
+      },
+      {
+        "key": 1681812088121,
+        "children": [],
+        "todo": {
+          "content": "FormPreviewer|FlowPreviewer 新增路由预览",
+          "id": 1681812088121,
+          "level": "default",
+          "done": false,
+          "start": 1681812088121
+        }
+      }
+    ],
+    "expandKeys": [
+      1681787157361,
+      1681812088121
+    ],
+    "schema": "https://github.com/Saber2pr/vsc-ext-todolist/blob/master/src/api/type.ts#L3",
+    "add_mode": "bottom",
+    "virtual": false,
+    "showLine": false,
+    "playFontSize": 24,
+    "title": ".todo",
+    "autoSort": false,
+    "showEndTime": false,
+    "lang": "en",
+    "version": "1681812135707"
+  }
+}

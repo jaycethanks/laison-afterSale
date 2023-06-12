@@ -1,0 +1,650 @@
+{
+  "system_templates": [
+    {
+      "formDesignId": "",
+      "designKey": "diagram_Process_1684220991382",
+      "designName": "测试流程",
+      "designDes": "测试流程说明",
+      "designIcon": "richangfeiyongbaoxiaoliucheng",
+      "designColor": "#f1441d",
+      "designGroupName": "测试分组",
+      "formInfo": "{\"list\":[{\"type\":\"input\",\"label\":\"姓名\",\"options\":{\"type\":\"text\",\"width\":\"100%\",\"defaultValue\":\"\",\"placeholder\":\"请输入\",\"clearable\":false,\"maxLength\":null,\"addonBefore\":\"\",\"addonAfter\":\"\",\"hidden\":false,\"disabled\":false},\"model\":\"name\",\"key\":\"input_1684221600773\",\"help\":\"\",\"rules\":[{\"required\":false,\"message\":\"请输入\"}]},{\"type\":\"input\",\"label\":\"住址\",\"options\":{\"type\":\"text\",\"width\":\"100%\",\"defaultValue\":\"\",\"placeholder\":\"请输入\",\"clearable\":false,\"maxLength\":null,\"addonBefore\":\"\",\"addonAfter\":\"\",\"hidden\":false,\"disabled\":false},\"model\":\"address\",\"key\":\"input_1684221605041\",\"help\":\"\",\"rules\":[{\"required\":false,\"message\":\"请输入\"}]},{\"label\":\"自定义字段\",\"type\":\"CustomFields\",\"options\":{\"help\":\"\",\"width\":\"100%\",\"hidden\":false,\"disabled\":false},\"rules\":[{\"required\":false,\"message\":\"This field is required\"}],\"key\":\"CustomFields_1684221684483\",\"model\":\"CustomFields\",\"exposeFields\":[{\"label\":\"userName\",\"disabled\":true,\"hidden\":false,\"type\":\"userName\",\"key\":\"userName\"},{\"label\":\"price\",\"disabled\":true,\"hidden\":false,\"type\":\"price\",\"key\":\"price\"}]}],\"config\":{\"layout\":\"horizontal\",\"labelCol\":{\"xs\":4,\"sm\":4,\"md\":4,\"lg\":4,\"xl\":4,\"xxl\":4},\"labelWidth\":100,\"labelLayout\":\"flex\",\"wrapperCol\":{\"xs\":18,\"sm\":18,\"md\":18,\"lg\":18,\"xl\":18,\"xxl\":18},\"hideRequiredMark\":false,\"customStyle\":\"\",\"enablePrint\":false,\"Expressions\":\"\",\"currentLang\":\"zh\",\"supportedLanguages\":[\"zh\",\"en\"]},\"predefinedLists\":{\"zh\":[{\"type\":\"input\",\"label\":\"姓名\",\"options\":{\"type\":\"text\",\"width\":\"100%\",\"defaultValue\":\"\",\"placeholder\":\"请输入\",\"clearable\":false,\"maxLength\":null,\"addonBefore\":\"\",\"addonAfter\":\"\",\"hidden\":false,\"disabled\":false},\"model\":\"name\",\"key\":\"input_1684221600773\",\"help\":\"\",\"rules\":[{\"required\":false,\"message\":\"请输入\"}]},{\"type\":\"input\",\"label\":\"住址\",\"options\":{\"type\":\"text\",\"width\":\"100%\",\"defaultValue\":\"\",\"placeholder\":\"请输入\",\"clearable\":false,\"maxLength\":null,\"addonBefore\":\"\",\"addonAfter\":\"\",\"hidden\":false,\"disabled\":false},\"model\":\"address\",\"key\":\"input_1684221605041\",\"help\":\"\",\"rules\":[{\"required\":false,\"message\":\"请输入\"}]},{\"label\":\"自定义字段\",\"type\":\"CustomFields\",\"options\":{\"help\":\"\",\"width\":\"100%\",\"hidden\":false,\"disabled\":false},\"rules\":[{\"required\":false,\"message\":\"This field is required\"}],\"key\":\"CustomFields_1684221684483\",\"model\":\"CustomFields\",\"exposeFields\":[{\"label\":\"userName\",\"disabled\":true,\"hidden\":false,\"type\":\"userName\",\"key\":\"userName\"},{\"label\":\"price\",\"disabled\":true,\"hidden\":false,\"type\":\"price\",\"key\":\"price\"}]}],\"en\":[{\"type\":\"input\",\"label\":\"name\",\"options\":{\"type\":\"text\",\"width\":\"100%\",\"defaultValue\":\"\",\"placeholder\":\"请输入\",\"clearable\":false,\"maxLength\":null,\"addonBefore\":\"\",\"addonAfter\":\"\",\"hidden\":false,\"disabled\":false},\"model\":\"name\",\"key\":\"input_1684221600773\",\"help\":\"\",\"rules\":[{\"required\":false,\"message\":\"请输入\"}]},{\"type\":\"input\",\"label\":\"address\",\"options\":{\"type\":\"text\",\"width\":\"100%\",\"defaultValue\":\"\",\"placeholder\":\"请输入\",\"clearable\":false,\"maxLength\":null,\"addonBefore\":\"\",\"addonAfter\":\"\",\"hidden\":false,\"disabled\":false},\"model\":\"address\",\"key\":\"input_1684221605041\",\"help\":\"\",\"rules\":[{\"required\":false,\"message\":\"请输入\"}]},{\"label\":\"CustomFields\",\"type\":\"CustomFields\",\"options\":{\"help\":\"\",\"width\":\"100%\",\"hidden\":false,\"disabled\":false},\"rules\":[{\"required\":false,\"message\":\"This field is required\"}],\"key\":\"CustomFields_1684221684483\",\"model\":\"CustomFields\",\"exposeFields\":[{\"label\":\"userName\",\"disabled\":true,\"hidden\":false,\"type\":\"userName\",\"key\":\"userName\"},{\"label\":\"price\",\"disabled\":true,\"hidden\":false,\"type\":\"price\",\"key\":\"price\"}]}]}}",
+      "procModelXml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<bpmn2:definitions xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:bpmn2=\"http://www.omg.org/spec/BPMN/20100524/MODEL\" xmlns:bpmndi=\"http://www.omg.org/spec/BPMN/20100524/DI\" xmlns:dc=\"http://www.omg.org/spec/DD/20100524/DC\" xmlns:di=\"http://www.omg.org/spec/DD/20100524/DI\" id=\"diagram_Process_1684220991382\" targetNamespace=\"http://bpmn.io/schema/bpmn\">\n  <bpmn2:process id=\"Process_1684220991382\" name=\"业务流程_1684220991382\" isExecutable=\"true\">\n    <bpmn2:startEvent id=\"Event_1w68gdb\">\n      <bpmn2:outgoing>Flow_0eonxmq</bpmn2:outgoing>\n    </bpmn2:startEvent>\n    <bpmn2:userTask id=\"Activity_0hrg3ov\" name=\"结点1\">\n      <bpmn2:incoming>Flow_0eonxmq</bpmn2:incoming>\n      <bpmn2:outgoing>Flow_1lg2oyk</bpmn2:outgoing>\n    </bpmn2:userTask>\n    <bpmn2:sequenceFlow id=\"Flow_0eonxmq\" sourceRef=\"Event_1w68gdb\" targetRef=\"Activity_0hrg3ov\" />\n    <bpmn2:userTask id=\"Activity_1pyujb0\" name=\"结点2\">\n      <bpmn2:incoming>Flow_1lg2oyk</bpmn2:incoming>\n      <bpmn2:outgoing>Flow_0e7ldzj</bpmn2:outgoing>\n    </bpmn2:userTask>\n    <bpmn2:sequenceFlow id=\"Flow_1lg2oyk\" sourceRef=\"Activity_0hrg3ov\" targetRef=\"Activity_1pyujb0\" />\n    <bpmn2:endEvent id=\"Event_0rz1nfn\">\n      <bpmn2:incoming>Flow_0e7ldzj</bpmn2:incoming>\n    </bpmn2:endEvent>\n    <bpmn2:sequenceFlow id=\"Flow_0e7ldzj\" sourceRef=\"Activity_1pyujb0\" targetRef=\"Event_0rz1nfn\" />\n  </bpmn2:process>\n  <bpmndi:BPMNDiagram id=\"BPMNDiagram_1\">\n    <bpmndi:BPMNPlane id=\"BPMNPlane_1\" bpmnElement=\"Process_1684220991382\">\n      <bpmndi:BPMNEdge id=\"Flow_0e7ldzj_di\" bpmnElement=\"Flow_0e7ldzj\">\n        <di:waypoint x=\"640\" y=\"150\" />\n        <di:waypoint x=\"702\" y=\"150\" />\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNEdge id=\"Flow_1lg2oyk_di\" bpmnElement=\"Flow_1lg2oyk\">\n        <di:waypoint x=\"480\" y=\"150\" />\n        <di:waypoint x=\"540\" y=\"150\" />\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNEdge id=\"Flow_0eonxmq_di\" bpmnElement=\"Flow_0eonxmq\">\n        <di:waypoint x=\"328\" y=\"150\" />\n        <di:waypoint x=\"380\" y=\"150\" />\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"Event_1w68gdb_di\" bpmnElement=\"Event_1w68gdb\">\n        <dc:Bounds x=\"292\" y=\"132\" width=\"36\" height=\"36\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNShape id=\"Activity_0hrg3ov_di\" bpmnElement=\"Activity_0hrg3ov\">\n        <dc:Bounds x=\"380\" y=\"110\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNShape id=\"Activity_1pyujb0_di\" bpmnElement=\"Activity_1pyujb0\">\n        <dc:Bounds x=\"540\" y=\"110\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNShape id=\"Event_0rz1nfn_di\" bpmnElement=\"Event_0rz1nfn\">\n        <dc:Bounds x=\"702\" y=\"132\" width=\"36\" height=\"36\" />\n      </bpmndi:BPMNShape>\n    </bpmndi:BPMNPlane>\n  </bpmndi:BPMNDiagram>\n</bpmn2:definitions>\n",
+      "permissionConfig": {
+        "starterMembers": [],
+        "viewAllMembers": []
+      },
+      "nodeConfigs": [
+        {
+          "nodeId": "Activity_0hrg3ov",
+          "lang": {
+            "zh": "结点1",
+            "en": "node1"
+          },
+          "taskConfig": {
+            "columnConfigs": [
+              {
+                "label": "姓名",
+                "type": "input",
+                "model": "name",
+                "key": "input_1684221600773",
+                "hidden": false,
+                "disabled": false
+              },
+              {
+                "label": "住址",
+                "type": "input",
+                "model": "address",
+                "key": "input_1684221605041",
+                "hidden": false,
+                "disabled": true
+              },
+              {
+                "label": "自定义字段",
+                "type": "CustomFields",
+                "model": "CustomFields",
+                "key": "CustomFields_1684221684483",
+                "hidden": false,
+                "disabled": false,
+                "exposeFields": [
+                  {
+                    "label": "userName",
+                    "disabled": true,
+                    "hidden": false,
+                    "type": "userName",
+                    "key": "userName"
+                  },
+                  {
+                    "label": "price",
+                    "disabled": false,
+                    "hidden": false,
+                    "type": "price",
+                    "key": "price"
+                  }
+                ]
+              }
+            ],
+            "members": [],
+            "applyerLeader": false,
+            "applyer": false
+          },
+          "copyConfig": {
+            "columnConfigs": [
+              {
+                "label": "姓名",
+                "type": "input",
+                "model": "name",
+                "key": "input_1684221600773",
+                "hidden": false,
+                "disabled": false
+              },
+              {
+                "label": "住址",
+                "type": "input",
+                "model": "address",
+                "key": "input_1684221605041",
+                "hidden": false,
+                "disabled": false
+              },
+              {
+                "label": "自定义字段",
+                "type": "CustomFields",
+                "model": "CustomFields",
+                "key": "CustomFields_1684221684483",
+                "hidden": false,
+                "disabled": false,
+                "exposeFields": [
+                  {
+                    "label": "userName",
+                    "disabled": true,
+                    "hidden": false,
+                    "type": "userName",
+                    "key": "userName"
+                  },
+                  {
+                    "label": "price",
+                    "disabled": true,
+                    "hidden": false,
+                    "type": "price",
+                    "key": "price"
+                  }
+                ]
+              }
+            ],
+            "members": [],
+            "type": "end"
+          },
+          "viewConfig": {
+            "commonConfig": {
+              "newest": true,
+              "disabled": true,
+              "hidden": true
+            },
+            "userConfig": {
+              "columnConfigs": [
+                {
+                  "label": "姓名",
+                  "type": "input",
+                  "model": "name",
+                  "key": "input_1684221600773",
+                  "hidden": false,
+                  "disabled": false
+                },
+                {
+                  "label": "住址",
+                  "type": "input",
+                  "model": "address",
+                  "key": "input_1684221605041",
+                  "hidden": false,
+                  "disabled": false
+                },
+                {
+                  "label": "自定义字段",
+                  "type": "CustomFields",
+                  "model": "CustomFields",
+                  "key": "CustomFields_1684221684483",
+                  "hidden": false,
+                  "disabled": false,
+                  "exposeFields": [
+                    {
+                      "label": "userName",
+                      "disabled": true,
+                      "hidden": false,
+                      "type": "userName",
+                      "key": "userName"
+                    },
+                    {
+                      "label": "price",
+                      "disabled": true,
+                      "hidden": false,
+                      "type": "price",
+                      "key": "price"
+                    }
+                  ]
+                }
+              ],
+              "members": []
+            }
+          }
+        },
+        {
+          "nodeId": "Activity_1pyujb0",
+          "lang": {
+            "zh": "结点2",
+            "en": "node2"
+          },
+          "taskConfig": {
+            "columnConfigs": [
+              {
+                "label": "姓名",
+                "type": "input",
+                "model": "name",
+                "key": "input_1684221600773",
+                "hidden": false,
+                "disabled": false
+              },
+              {
+                "label": "住址",
+                "type": "input",
+                "model": "address",
+                "key": "input_1684221605041",
+                "hidden": false,
+                "disabled": true
+              },
+              {
+                "label": "自定义字段",
+                "type": "CustomFields",
+                "model": "CustomFields",
+                "key": "CustomFields_1684221684483",
+                "hidden": false,
+                "disabled": false,
+                "exposeFields": [
+                  {
+                    "label": "userName",
+                    "disabled": false,
+                    "hidden": false,
+                    "type": "userName",
+                    "key": "userName"
+                  },
+                  {
+                    "label": "price",
+                    "disabled": true,
+                    "hidden": false,
+                    "type": "price",
+                    "key": "price"
+                  }
+                ]
+              }
+            ],
+            "members": [],
+            "applyerLeader": false,
+            "applyer": false
+          },
+          "copyConfig": {
+            "columnConfigs": [
+              {
+                "label": "姓名",
+                "type": "input",
+                "model": "name",
+                "key": "input_1684221600773",
+                "hidden": false,
+                "disabled": false
+              },
+              {
+                "label": "住址",
+                "type": "input",
+                "model": "address",
+                "key": "input_1684221605041",
+                "hidden": false,
+                "disabled": false
+              },
+              {
+                "label": "自定义字段",
+                "type": "CustomFields",
+                "model": "CustomFields",
+                "key": "CustomFields_1684221684483",
+                "hidden": false,
+                "disabled": false,
+                "exposeFields": [
+                  {
+                    "label": "userName",
+                    "disabled": true,
+                    "hidden": false,
+                    "type": "userName",
+                    "key": "userName"
+                  },
+                  {
+                    "label": "price",
+                    "disabled": true,
+                    "hidden": false,
+                    "type": "price",
+                    "key": "price"
+                  }
+                ]
+              }
+            ],
+            "members": [],
+            "type": "end"
+          },
+          "viewConfig": {
+            "commonConfig": {
+              "newest": true,
+              "disabled": true,
+              "hidden": true
+            },
+            "userConfig": {
+              "columnConfigs": [
+                {
+                  "label": "姓名",
+                  "type": "input",
+                  "model": "name",
+                  "key": "input_1684221600773",
+                  "hidden": false,
+                  "disabled": false
+                },
+                {
+                  "label": "住址",
+                  "type": "input",
+                  "model": "address",
+                  "key": "input_1684221605041",
+                  "hidden": false,
+                  "disabled": false
+                },
+                {
+                  "label": "自定义字段",
+                  "type": "CustomFields",
+                  "model": "CustomFields",
+                  "key": "CustomFields_1684221684483",
+                  "hidden": false,
+                  "disabled": false,
+                  "exposeFields": [
+                    {
+                      "label": "userName",
+                      "disabled": true,
+                      "hidden": false,
+                      "type": "userName",
+                      "key": "userName"
+                    },
+                    {
+                      "label": "price",
+                      "disabled": true,
+                      "hidden": false,
+                      "type": "price",
+                      "key": "price"
+                    }
+                  ]
+                }
+              ],
+              "members": []
+            }
+          }
+        }
+      ],
+      "id": 2
+    }
+  ],
+  "platform_templates": [
+    {
+      "formDesignId": "",
+      "designKey": "diagram_Process_1684220991382",
+      "designName": "测试流程",
+      "designDes": "测试流程说明",
+      "designIcon": "richangfeiyongbaoxiaoliucheng",
+      "designColor": "#f1441d",
+      "designGroupName": "测试分组",
+      "formInfo": "{\"list\":[{\"type\":\"input\",\"label\":\"姓名\",\"options\":{\"type\":\"text\",\"width\":\"100%\",\"defaultValue\":\"\",\"placeholder\":\"请输入\",\"clearable\":false,\"maxLength\":null,\"addonBefore\":\"\",\"addonAfter\":\"\",\"hidden\":false,\"disabled\":false},\"model\":\"name\",\"key\":\"input_1684221600773\",\"help\":\"\",\"rules\":[{\"required\":false,\"message\":\"请输入\"}]},{\"type\":\"input\",\"label\":\"住址\",\"options\":{\"type\":\"text\",\"width\":\"100%\",\"defaultValue\":\"\",\"placeholder\":\"请输入\",\"clearable\":false,\"maxLength\":null,\"addonBefore\":\"\",\"addonAfter\":\"\",\"hidden\":false,\"disabled\":false},\"model\":\"address\",\"key\":\"input_1684221605041\",\"help\":\"\",\"rules\":[{\"required\":false,\"message\":\"请输入\"}]},{\"label\":\"自定义字段\",\"type\":\"CustomFields\",\"options\":{\"help\":\"\",\"width\":\"100%\",\"hidden\":false,\"disabled\":false},\"rules\":[{\"required\":false,\"message\":\"This field is required\"}],\"key\":\"CustomFields_1684221684483\",\"model\":\"CustomFields\",\"exposeFields\":[{\"label\":\"userName\",\"disabled\":true,\"hidden\":false,\"type\":\"userName\",\"key\":\"userName\"},{\"label\":\"price\",\"disabled\":true,\"hidden\":false,\"type\":\"price\",\"key\":\"price\"}]}],\"config\":{\"layout\":\"horizontal\",\"labelCol\":{\"xs\":4,\"sm\":4,\"md\":4,\"lg\":4,\"xl\":4,\"xxl\":4},\"labelWidth\":100,\"labelLayout\":\"flex\",\"wrapperCol\":{\"xs\":18,\"sm\":18,\"md\":18,\"lg\":18,\"xl\":18,\"xxl\":18},\"hideRequiredMark\":false,\"customStyle\":\"\",\"enablePrint\":false,\"Expressions\":\"\",\"currentLang\":\"zh\",\"supportedLanguages\":[\"zh\",\"en\"]},\"predefinedLists\":{\"zh\":[{\"type\":\"input\",\"label\":\"姓名\",\"options\":{\"type\":\"text\",\"width\":\"100%\",\"defaultValue\":\"\",\"placeholder\":\"请输入\",\"clearable\":false,\"maxLength\":null,\"addonBefore\":\"\",\"addonAfter\":\"\",\"hidden\":false,\"disabled\":false},\"model\":\"name\",\"key\":\"input_1684221600773\",\"help\":\"\",\"rules\":[{\"required\":false,\"message\":\"请输入\"}]},{\"type\":\"input\",\"label\":\"住址\",\"options\":{\"type\":\"text\",\"width\":\"100%\",\"defaultValue\":\"\",\"placeholder\":\"请输入\",\"clearable\":false,\"maxLength\":null,\"addonBefore\":\"\",\"addonAfter\":\"\",\"hidden\":false,\"disabled\":false},\"model\":\"address\",\"key\":\"input_1684221605041\",\"help\":\"\",\"rules\":[{\"required\":false,\"message\":\"请输入\"}]},{\"label\":\"自定义字段\",\"type\":\"CustomFields\",\"options\":{\"help\":\"\",\"width\":\"100%\",\"hidden\":false,\"disabled\":false},\"rules\":[{\"required\":false,\"message\":\"This field is required\"}],\"key\":\"CustomFields_1684221684483\",\"model\":\"CustomFields\",\"exposeFields\":[{\"label\":\"userName\",\"disabled\":true,\"hidden\":false,\"type\":\"userName\",\"key\":\"userName\"},{\"label\":\"price\",\"disabled\":true,\"hidden\":false,\"type\":\"price\",\"key\":\"price\"}]}],\"en\":[{\"type\":\"input\",\"label\":\"name\",\"options\":{\"type\":\"text\",\"width\":\"100%\",\"defaultValue\":\"\",\"placeholder\":\"请输入\",\"clearable\":false,\"maxLength\":null,\"addonBefore\":\"\",\"addonAfter\":\"\",\"hidden\":false,\"disabled\":false},\"model\":\"name\",\"key\":\"input_1684221600773\",\"help\":\"\",\"rules\":[{\"required\":false,\"message\":\"请输入\"}]},{\"type\":\"input\",\"label\":\"address\",\"options\":{\"type\":\"text\",\"width\":\"100%\",\"defaultValue\":\"\",\"placeholder\":\"请输入\",\"clearable\":false,\"maxLength\":null,\"addonBefore\":\"\",\"addonAfter\":\"\",\"hidden\":false,\"disabled\":false},\"model\":\"address\",\"key\":\"input_1684221605041\",\"help\":\"\",\"rules\":[{\"required\":false,\"message\":\"请输入\"}]},{\"label\":\"CustomFields\",\"type\":\"CustomFields\",\"options\":{\"help\":\"\",\"width\":\"100%\",\"hidden\":false,\"disabled\":false},\"rules\":[{\"required\":false,\"message\":\"This field is required\"}],\"key\":\"CustomFields_1684221684483\",\"model\":\"CustomFields\",\"exposeFields\":[{\"label\":\"userName\",\"disabled\":true,\"hidden\":false,\"type\":\"userName\",\"key\":\"userName\"},{\"label\":\"price\",\"disabled\":true,\"hidden\":false,\"type\":\"price\",\"key\":\"price\"}]}]}}",
+      "procModelXml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<bpmn2:definitions xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:bpmn2=\"http://www.omg.org/spec/BPMN/20100524/MODEL\" xmlns:bpmndi=\"http://www.omg.org/spec/BPMN/20100524/DI\" xmlns:dc=\"http://www.omg.org/spec/DD/20100524/DC\" xmlns:di=\"http://www.omg.org/spec/DD/20100524/DI\" id=\"diagram_Process_1684220991382\" targetNamespace=\"http://bpmn.io/schema/bpmn\">\n  <bpmn2:process id=\"Process_1684220991382\" name=\"业务流程_1684220991382\" isExecutable=\"true\">\n    <bpmn2:startEvent id=\"Event_1w68gdb\">\n      <bpmn2:outgoing>Flow_0eonxmq</bpmn2:outgoing>\n    </bpmn2:startEvent>\n    <bpmn2:userTask id=\"Activity_0hrg3ov\" name=\"结点1\">\n      <bpmn2:incoming>Flow_0eonxmq</bpmn2:incoming>\n      <bpmn2:outgoing>Flow_1lg2oyk</bpmn2:outgoing>\n    </bpmn2:userTask>\n    <bpmn2:sequenceFlow id=\"Flow_0eonxmq\" sourceRef=\"Event_1w68gdb\" targetRef=\"Activity_0hrg3ov\" />\n    <bpmn2:userTask id=\"Activity_1pyujb0\" name=\"结点2\">\n      <bpmn2:incoming>Flow_1lg2oyk</bpmn2:incoming>\n      <bpmn2:outgoing>Flow_0e7ldzj</bpmn2:outgoing>\n    </bpmn2:userTask>\n    <bpmn2:sequenceFlow id=\"Flow_1lg2oyk\" sourceRef=\"Activity_0hrg3ov\" targetRef=\"Activity_1pyujb0\" />\n    <bpmn2:endEvent id=\"Event_0rz1nfn\">\n      <bpmn2:incoming>Flow_0e7ldzj</bpmn2:incoming>\n    </bpmn2:endEvent>\n    <bpmn2:sequenceFlow id=\"Flow_0e7ldzj\" sourceRef=\"Activity_1pyujb0\" targetRef=\"Event_0rz1nfn\" />\n  </bpmn2:process>\n  <bpmndi:BPMNDiagram id=\"BPMNDiagram_1\">\n    <bpmndi:BPMNPlane id=\"BPMNPlane_1\" bpmnElement=\"Process_1684220991382\">\n      <bpmndi:BPMNEdge id=\"Flow_0e7ldzj_di\" bpmnElement=\"Flow_0e7ldzj\">\n        <di:waypoint x=\"640\" y=\"150\" />\n        <di:waypoint x=\"702\" y=\"150\" />\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNEdge id=\"Flow_1lg2oyk_di\" bpmnElement=\"Flow_1lg2oyk\">\n        <di:waypoint x=\"480\" y=\"150\" />\n        <di:waypoint x=\"540\" y=\"150\" />\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNEdge id=\"Flow_0eonxmq_di\" bpmnElement=\"Flow_0eonxmq\">\n        <di:waypoint x=\"328\" y=\"150\" />\n        <di:waypoint x=\"380\" y=\"150\" />\n      </bpmndi:BPMNEdge>\n      <bpmndi:BPMNShape id=\"Event_1w68gdb_di\" bpmnElement=\"Event_1w68gdb\">\n        <dc:Bounds x=\"292\" y=\"132\" width=\"36\" height=\"36\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNShape id=\"Activity_0hrg3ov_di\" bpmnElement=\"Activity_0hrg3ov\">\n        <dc:Bounds x=\"380\" y=\"110\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNShape id=\"Activity_1pyujb0_di\" bpmnElement=\"Activity_1pyujb0\">\n        <dc:Bounds x=\"540\" y=\"110\" width=\"100\" height=\"80\" />\n      </bpmndi:BPMNShape>\n      <bpmndi:BPMNShape id=\"Event_0rz1nfn_di\" bpmnElement=\"Event_0rz1nfn\">\n        <dc:Bounds x=\"702\" y=\"132\" width=\"36\" height=\"36\" />\n      </bpmndi:BPMNShape>\n    </bpmndi:BPMNPlane>\n  </bpmndi:BPMNDiagram>\n</bpmn2:definitions>\n",
+      "permissionConfig": {
+        "starterMembers": [],
+        "viewAllMembers": []
+      },
+      "nodeConfigs": [
+        {
+          "nodeId": "Activity_0hrg3ov",
+          "lang": {
+            "zh": "结点1",
+            "en": "node1"
+          },
+          "taskConfig": {
+            "columnConfigs": [
+              {
+                "label": "姓名",
+                "type": "input",
+                "model": "name",
+                "key": "input_1684221600773",
+                "hidden": false,
+                "disabled": false
+              },
+              {
+                "label": "住址",
+                "type": "input",
+                "model": "address",
+                "key": "input_1684221605041",
+                "hidden": false,
+                "disabled": true
+              },
+              {
+                "label": "自定义字段",
+                "type": "CustomFields",
+                "model": "CustomFields",
+                "key": "CustomFields_1684221684483",
+                "hidden": false,
+                "disabled": false,
+                "exposeFields": [
+                  {
+                    "label": "userName",
+                    "disabled": true,
+                    "hidden": false,
+                    "type": "userName",
+                    "key": "userName"
+                  },
+                  {
+                    "label": "price",
+                    "disabled": true,
+                    "hidden": false,
+                    "type": "price",
+                    "key": "price"
+                  }
+                ]
+              }
+            ],
+            "members": [],
+            "applyerLeader": false,
+            "applyer": false
+          },
+          "copyConfig": {
+            "columnConfigs": [
+              {
+                "label": "姓名",
+                "type": "input",
+                "model": "name",
+                "key": "input_1684221600773",
+                "hidden": false,
+                "disabled": false
+              },
+              {
+                "label": "住址",
+                "type": "input",
+                "model": "address",
+                "key": "input_1684221605041",
+                "hidden": false,
+                "disabled": false
+              },
+              {
+                "label": "自定义字段",
+                "type": "CustomFields",
+                "model": "CustomFields",
+                "key": "CustomFields_1684221684483",
+                "hidden": false,
+                "disabled": false,
+                "exposeFields": [
+                  {
+                    "label": "userName",
+                    "disabled": true,
+                    "hidden": false,
+                    "type": "userName",
+                    "key": "userName"
+                  },
+                  {
+                    "label": "price",
+                    "disabled": true,
+                    "hidden": false,
+                    "type": "price",
+                    "key": "price"
+                  }
+                ]
+              }
+            ],
+            "members": [],
+            "type": "end"
+          },
+          "viewConfig": {
+            "commonConfig": {
+              "newest": true,
+              "disabled": true,
+              "hidden": true
+            },
+            "userConfig": {
+              "columnConfigs": [
+                {
+                  "label": "姓名",
+                  "type": "input",
+                  "model": "name",
+                  "key": "input_1684221600773",
+                  "hidden": false,
+                  "disabled": false
+                },
+                {
+                  "label": "住址",
+                  "type": "input",
+                  "model": "address",
+                  "key": "input_1684221605041",
+                  "hidden": false,
+                  "disabled": false
+                },
+                {
+                  "label": "自定义字段",
+                  "type": "CustomFields",
+                  "model": "CustomFields",
+                  "key": "CustomFields_1684221684483",
+                  "hidden": false,
+                  "disabled": false,
+                  "exposeFields": [
+                    {
+                      "label": "userName",
+                      "disabled": true,
+                      "hidden": false,
+                      "type": "userName",
+                      "key": "userName"
+                    },
+                    {
+                      "label": "price",
+                      "disabled": true,
+                      "hidden": false,
+                      "type": "price",
+                      "key": "price"
+                    }
+                  ]
+                }
+              ],
+              "members": []
+            }
+          }
+        },
+        {
+          "nodeId": "Activity_1pyujb0",
+          "lang": {
+            "zh": "结点2",
+            "en": "node2"
+          },
+          "taskConfig": {
+            "columnConfigs": [
+              {
+                "label": "姓名",
+                "type": "input",
+                "model": "name",
+                "key": "input_1684221600773",
+                "hidden": false,
+                "disabled": false
+              },
+              {
+                "label": "住址",
+                "type": "input",
+                "model": "address",
+                "key": "input_1684221605041",
+                "hidden": false,
+                "disabled": true
+              },
+              {
+                "label": "自定义字段",
+                "type": "CustomFields",
+                "model": "CustomFields",
+                "key": "CustomFields_1684221684483",
+                "hidden": false,
+                "disabled": false,
+                "exposeFields": [
+                  {
+                    "label": "userName",
+                    "disabled": true,
+                    "hidden": false,
+                    "type": "userName",
+                    "key": "userName"
+                  },
+                  {
+                    "label": "price",
+                    "disabled": true,
+                    "hidden": false,
+                    "type": "price",
+                    "key": "price"
+                  }
+                ]
+              }
+            ],
+            "members": [],
+            "applyerLeader": false,
+            "applyer": false
+          },
+          "copyConfig": {
+            "columnConfigs": [
+              {
+                "label": "姓名",
+                "type": "input",
+                "model": "name",
+                "key": "input_1684221600773",
+                "hidden": false,
+                "disabled": false
+              },
+              {
+                "label": "住址",
+                "type": "input",
+                "model": "address",
+                "key": "input_1684221605041",
+                "hidden": false,
+                "disabled": false
+              },
+              {
+                "label": "自定义字段",
+                "type": "CustomFields",
+                "model": "CustomFields",
+                "key": "CustomFields_1684221684483",
+                "hidden": false,
+                "disabled": false,
+                "exposeFields": [
+                  {
+                    "label": "userName",
+                    "disabled": true,
+                    "hidden": false,
+                    "type": "userName",
+                    "key": "userName"
+                  },
+                  {
+                    "label": "price",
+                    "disabled": true,
+                    "hidden": false,
+                    "type": "price",
+                    "key": "price"
+                  }
+                ]
+              }
+            ],
+            "members": [],
+            "type": "end"
+          },
+          "viewConfig": {
+            "commonConfig": {
+              "newest": true,
+              "disabled": true,
+              "hidden": true
+            },
+            "userConfig": {
+              "columnConfigs": [
+                {
+                  "label": "姓名",
+                  "type": "input",
+                  "model": "name",
+                  "key": "input_1684221600773",
+                  "hidden": false,
+                  "disabled": false
+                },
+                {
+                  "label": "住址",
+                  "type": "input",
+                  "model": "address",
+                  "key": "input_1684221605041",
+                  "hidden": false,
+                  "disabled": false
+                },
+                {
+                  "label": "自定义字段",
+                  "type": "CustomFields",
+                  "model": "CustomFields",
+                  "key": "CustomFields_1684221684483",
+                  "hidden": false,
+                  "disabled": false,
+                  "exposeFields": [
+                    {
+                      "label": "userName",
+                      "disabled": true,
+                      "hidden": false,
+                      "type": "userName",
+                      "key": "userName"
+                    },
+                    {
+                      "label": "price",
+                      "disabled": true,
+                      "hidden": false,
+                      "type": "price",
+                      "key": "price"
+                    }
+                  ]
+                }
+              ],
+              "members": []
+            }
+          }
+        }
+      ],
+      "id": 1
+    }
+  ]
+}
