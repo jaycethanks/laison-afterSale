@@ -1,6 +1,6 @@
 <template>
   <a-layout id="layout-root">
-    <a-layout-sider theme="light" id="layout-aside" v-model="collapsed" :trigger="null" collapsible>
+    <a-layout-sider theme="dark" id="layout-aside" v-model="collapsed" :trigger="null" collapsible>
       <div class="logo">
         <Logo :style="{ width: collapsed ? '18px' : '32px' }" />
         <div class="logo-text">

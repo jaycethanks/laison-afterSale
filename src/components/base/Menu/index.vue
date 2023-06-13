@@ -1,5 +1,5 @@
 <template>
-  <a-menu :inline-collapsed="collapsed" theme="light" class="menu-root" mode="inline" :default-selected-keys="['1']">
+  <a-menu theme="dark" :inline-collapsed="collapsed" class="menu-root" mode="inline" :default-selected-keys="['1']">
     <template v-for="{ path, icon, name, children } in menuConfig">
       <a-menu-item class="menu-item" :key="path" v-if="children.length === 0">
         <router-link :to="path">
@@ -24,7 +24,6 @@
 </template>
 <script>
 import menuConfig from './menu.config';
-console.log('[menuConfig]: ', menuConfig);
 export default {
   props: ['collapsed'],
   components: {},
@@ -42,12 +41,12 @@ export default {
 }
 .menu-root {
   user-select: none;
-  background-color: inherit;
+  // background-color: inherit;
   border: unset;
-  color: inherit;
+  // color: inherit;
   .menu-item {
-    color: inherit;
-    background-color: inherit;
+    // color: inherit;
+    // background-color: inherit;
     &:hover {
       // font-weight: bold;
       background-color: $layout-aside-hover-bg;
