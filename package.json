@@ -31,7 +31,6 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "compression-webpack-plugin": "^10.0.0",
-    "json-server": "^0.17.3",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "node-polyfill-webpack-plugin": "^2.0.1",

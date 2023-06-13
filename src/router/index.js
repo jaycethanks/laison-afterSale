@@ -128,16 +128,6 @@ export const systemRoutes = [
           title: '我的发起',
         },
         name: '我的发起',
-        beforeEnter: (to, from, next) => {
-          if (!to.query.uniTenantId) {
-            next({
-              path: to.path,
-              query: { uniTenantId, bizToken: '3209eedc-3d2b-48aa-802d-8ffe5799c476' },
-            });
-          } else {
-            next();
-          }
-        },
         component: () => import('@/views/WorkOrder/MyApply/index.vue'),
       },
       {
@@ -146,16 +136,6 @@ export const systemRoutes = [
         name: '我的代办',
         meta: {
           title: '我的代办',
-        },
-        beforeEnter: (to, from, next) => {
-          if (!to.query.uniTenantId) {
-            next({
-              path: to.path,
-              query: { uniTenantId, bizToken: '3209eedc-3d2b-48aa-802d-8ffe5799c476' },
-            });
-          } else {
-            next();
-          }
         },
         component: () => import('@/views/WorkOrder/MyTodo/index.vue'),
       },
@@ -166,16 +146,7 @@ export const systemRoutes = [
         meta: {
           title: '我的已办',
         },
-        beforeEnter: (to, from, next) => {
-          if (!to.query.uniTenantId) {
-            next({
-              path: to.path,
-              query: { uniTenantId, bizToken: '3209eedc-3d2b-48aa-802d-8ffe5799c476' },
-            });
-          } else {
-            next();
-          }
-        },
+
         component: () => import('@/views/WorkOrder/MyDone/index.vue'),
       },
       {
@@ -184,16 +155,7 @@ export const systemRoutes = [
         meta: {
           title: '抄送我的',
         },
-        beforeEnter: (to, from, next) => {
-          if (!to.query.uniTenantId) {
-            next({
-              path: to.path,
-              query: { uniTenantId, bizToken: '3209eedc-3d2b-48aa-802d-8ffe5799c476' },
-            });
-          } else {
-            next();
-          }
-        },
+
         name: '抄送我的',
         component: () => import('@/views/WorkOrder/MyCopied/index.vue'),
       },

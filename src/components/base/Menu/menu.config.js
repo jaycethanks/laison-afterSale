@@ -11,7 +11,7 @@ systemRoutes.forEach((route) => {
       }
     });
     system.push({
-      path: '/system' + '/' + path,
+      path: '/' + path,
       name,
       icon,
       children,
