@@ -1,11 +1,16 @@
 <template>
-  <iframe
-    src="http://192.168.3.46:3000/platform/workorder/mycopied?uniTenantId=1660919377043652608&bizToken=3209eedc-3d2b-48aa-802d-8ffe5799c476"
-    frameborder="0"
-  ></iframe>
+  <iframe :src="src" frameborder="0"></iframe>
 </template>
 <script>
+const FLOWFORM_PLATFORM_ADDRESS = process.env.VUE_APP_FLOWFORM_ADDRESS
+const UNI_TENANT_ID = process.env.VUE_APP_UNITENANT
 export default {
+  computed:{
+    src:function(){
+      const token = cusLocalStorage.getItem('system', 'access_token');
+      return FLOWFORM_PLATFORM_ADDRESS + `/platform/workorder/mycopied?uniTenantId=${UNI_TENANT_ID}&bizToken=${token}`
+    }
+  },
 }
 </script>
 <style scoped>
